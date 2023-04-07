@@ -1,0 +1,146 @@
+$color-primary: rgb(29, 27, 27);
+$color-secondary: #383333;
+$color-black-transparent: rgba(0, 0, 0, 0.5);
+$text-primary: rgb(205, 164, 52);
+$text-secondary: rgb(240, 217, 187);
+$text-tertiary: tan;
+$font-primary: "Island Moments", sans-serif;
+$font-secondary: "Ledger", sans-serif;
+$font-teritary: "Montserrat", sans-serif;
+$transparent: rgba(255, 255, 255, 0);
+
+body {
+    font-family: $font-primary;
+}
+
+a, a:hover {
+    color: inherit;
+    text-decoration: none;
+  }
+
+nav {
+    .navbar {
+        background-color: $color-primary;
+        position: fixed;
+        width: 100%;
+        height: 60px;
+        z-index: 10;
+    }
+
+    img {
+        height: 60px;
+        margin-right: 8px;
+    }
+
+    li {
+        color: $text-secondary;
+        align-items: left;
+        font-size: 145%
+    }
+
+    .navbar-brand {
+        font-size: 200%;
+        color: $text-primary;
+    }
+}
+nav {
+    background-color: $color-primary;
+}
+
+.dropdown-menu {
+    background-color: rgb(209, 209, 227);
+}
+
+.firstBlock {
+    #banner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        position: relative;
+    }
+
+    img {
+        min-width: 100%;
+        position: absolute;
+        overflow: hidden;
+    }
+
+    #translucentBox {
+        min-height: 100%;
+        min-width: 50%;
+        z-index: 2;
+        background-color: $color-black-transparent;
+        color: $text-secondary;
+        text-align: center;
+        font-family: $font-secondary;
+        margin: 10%;
+        padding: 20px;
+    }
+
+    h1 { font-size: 550%; }
+    h2 { font-size: 450%; }
+    h6 { font-size: 250%; color: $text-tertiary;}
+}
+
+.galleryBlock {
+    .dividerDiv {
+        width: 100%;
+        height: 160px;
+        background-color: $color-secondary;
+    }
+
+    .textDiv {
+        display: flex;
+        overflow: hidden;
+        position: relative;
+        background-color: $color-primary;
+        width: 450px;
+        top: -65px;
+        margin: auto;
+    }
+
+    h1 {
+        font-size: 100px;
+        color: $text-primary;
+        margin: auto;
+        vertical-align: middle;
+    }
+
+    .imageHolder {
+        height: 700px;
+        background-color: $transparent;
+        margin-top: -65px;
+    }
+}
+
+footer {
+    div {
+        width: 100%;
+        height: 300px;
+        background-color: $color-primary;
+        color: white;
+        padding: 20px;
+    }
+}
+
+// .row-content {
+//     padding: 50px 0;
+//     border-bottom: 1px ridge;
+//     min-height: 200px;
+// }
+
+// .carousel-caption {
+//     background-color: $color-black-transparent;
+// }
+
+// .carousel {
+//     border: solid $color-secondary;
+// }
+
+// #carouselButton {
+//     position: absolute;
+//     right: 0;
+//     bottom: 0;
+//     z-index: 100;
+// }

@@ -5,35 +5,98 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rich Art Studio - Ryszard Halewicz</title>
+    <title>RichArt Studio - Ryszard Halewicz</title>
     <!--Bootstrap CSS-->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Island Moments' />
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat' />
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Ledger' />
     <!--Other CSS-->
-    <link rel="icon" href="images/r_icon.png" />
+    <link rel="icon" href="images/richartlogo.png" />
     <link rel="stylesheet" href="css/styles.css" />
 </head>
 
 <body>
-    <header>
-        <div>
-            <h1>Rich Art Studio</h1>
-            <h2>Ryszard Halewicz</h2>
-        </div>
-    </header>
 
     <!--Navbar start-->
-    <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
-        <div class="container">
-
+    <nav class="navbar navbar-expand-md">
+        <img src="images/richartlogo.png" alt="logo" />
+        <a class="navbar-brand" href="#">RichArt Studio</a>
+        <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="col nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="col nav-item">
+                    <a class="nav-link" href="#">Paintings</a>
+                </li>
+                <li class="col nav-item">
+                    <a class="nav-link" href="#">Murals</a>
+                </li>
+                <li class="col nav-item">
+                    <a class="nav-link" href="#">Sculptures</a>
+                </li>
+                <li class="col nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+                </li>
+            </ul>
         </div>
     </nav>
     <!--Navbar end-->
 
+    <div class="firstBlock">
+        <div id="banner">
+            <img src="images/stockpainter.jpg" alt="Image of someone painting" />
+            <div id="translucentBox">
+                <h2>RichArt</h2>
+                <h1>Studio</h1>
+                <h6>Ryszard Halewicz</h6>
+            </div>
+        </div>
+    </div>
+
+    <div class="galleryBlock">
+        <div class="dividerDiv"></div>
+        <div class="textDiv">
+            <h1>Paintings</h1>
+        </div>
+        <div class="imageHolder"></div>
+        <div class="dividerDiv"></div>
+    </div>
+
+    <div class="galleryBlock">
+        <div class="textDiv">
+            <h1>Murals</h1>
+        </div>
+        <div class="imageHolder"></div>
+        <div class="dividerDiv"></div>
+    </div>
+
+    <div class="galleryBlock">
+        <div class="textDiv">
+            <h1>Sculptures</h1>
+        </div>
+        <div class="imageHolder"></div>
+        <div class="dividerDiv"></div>
+    </div>
+
     <footer>
         <div>
-
+            <h1>Footer here</h1>
         </div>
     </footer>
 
