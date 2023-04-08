@@ -2,15 +2,17 @@ $color-primary: rgb(29, 27, 27);
 $color-secondary: #383333;
 $color-black-transparent: rgba(0, 0, 0, 0.5);
 $text-primary: rgb(205, 164, 52);
-$text-secondary: rgb(240, 217, 187);
-$text-tertiary: tan;
+$text-secondary: rgb(255, 255, 255);
 $font-primary: "Island Moments", sans-serif;
 $font-secondary: "Ledger", sans-serif;
-$font-teritary: "Montserrat", sans-serif;
 $transparent: rgba(255, 255, 255, 0);
 
 body {
-    font-family: $font-primary;
+    font-family: $font-secondary;
+    background-image: url("https://img.freepik.com/free-photo/gray-concrete-wall_53876-88973.jpg?w=1480&t=st=1680908243~exp=1680908843~hmac=6e0134e43c81faf53790c7dc00c1b4d3f93182714c6ed60a32e228fdcd5702f1");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 a, a:hover {
@@ -21,73 +23,82 @@ a, a:hover {
 nav {
     .navbar {
         background-color: $color-primary;
-        position: fixed;
         width: 100%;
         height: 60px;
-        z-index: 10;
     }
 
     img {
         height: 60px;
-        margin-right: 8px;
+        margin-right: 30px;
     }
 
     li {
+        font-family: $font-secondary;
         color: $text-secondary;
         align-items: left;
-        font-size: 145%
+        font-size: 100%;
+    }
+
+    li:hover {
+        color: $text-primary;
     }
 
     .navbar-brand {
-        font-size: 200%;
+        font-size: 300%;
+        margin: -10px;
         color: $text-primary;
+        font-family: $font-primary;
     }
 }
 nav {
     background-color: $color-primary;
 }
 
-.dropdown-menu {
-    background-color: rgb(209, 209, 227);
-}
-
 .firstBlock {
     #banner {
         display: flex;
-        justify-content: center;
+        justify-content: left;
         align-items: center;
         overflow: hidden;
         position: relative;
+        min-height: 810px;
     }
 
     img {
         min-width: 100%;
+        min-height: 810px;
         position: absolute;
         overflow: hidden;
     }
 
     #translucentBox {
-        min-height: 100%;
-        min-width: 50%;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-direction: column;
+        text-align: center;
         z-index: 2;
         background-color: $color-black-transparent;
         color: $text-secondary;
-        text-align: center;
         font-family: $font-secondary;
-        margin: 10%;
         padding: 20px;
+        width: 40%;
+        min-width: 400px;
+        height: 400px;
+        margin-left: 50px;
     }
 
-    h1 { font-size: 550%; }
     h2 { font-size: 450%; }
-    h6 { font-size: 250%; color: $text-tertiary;}
+    h1 { font-size: 580%; }
+    h6 { font-size: 220%; color: $text-primary;}
 }
 
 .galleryBlock {
     .dividerDiv {
         width: 100%;
         height: 160px;
-        background-color: $color-secondary;
+        // background-color: $color-secondary;
+        background-color: $transparent;
     }
 
     .textDiv {
@@ -105,12 +116,14 @@ nav {
         color: $text-primary;
         margin: auto;
         vertical-align: middle;
+        font-family: $font-primary;
     }
 
     .imageHolder {
-        height: 700px;
-        background-color: $transparent;
-        margin-top: -65px;
+        height: 900px;
+        margin-top: -120px;
+        background-color: $color-secondary;
+        // background-color: $transparent;
     }
 }
 

@@ -1,5 +1,9 @@
 body {
-  font-family: "Island Moments", sans-serif; }
+  font-family: "Ledger", sans-serif;
+  background-image: url("https://img.freepik.com/free-photo/gray-concrete-wall_53876-88973.jpg?w=1480&t=st=1680908243~exp=1680908843~hmac=6e0134e43c81faf53790c7dc00c1b4d3f93182714c6ed60a32e228fdcd5702f1");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover; }
 
 a, a:hover {
   color: inherit;
@@ -7,67 +11,75 @@ a, a:hover {
 
 nav .navbar {
   background-color: #1d1b1b;
-  position: fixed;
   width: 100%;
-  height: 60px;
-  z-index: 10; }
+  height: 60px; }
 
 nav img {
   height: 60px;
-  margin-right: 8px; }
+  margin-right: 30px; }
 
 nav li {
-  color: #f0d9bb;
+  font-family: "Ledger", sans-serif;
+  color: white;
   align-items: left;
-  font-size: 145%; }
+  font-size: 100%; }
+
+nav li:hover {
+  color: #cda434; }
 
 nav .navbar-brand {
-  font-size: 200%;
-  color: #cda434; }
+  font-size: 300%;
+  margin: -10px;
+  color: #cda434;
+  font-family: "Island Moments", sans-serif; }
 
 nav {
   background-color: #1d1b1b; }
 
-.dropdown-menu {
-  background-color: #d1d1e3; }
-
 .firstBlock #banner {
   display: flex;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
   overflow: hidden;
-  position: relative; }
+  position: relative;
+  min-height: 810px; }
 
 .firstBlock img {
   min-width: 100%;
+  min-height: 810px;
   position: absolute;
   overflow: hidden; }
 
 .firstBlock #translucentBox {
-  min-height: 100%;
-  min-width: 50%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  text-align: center;
   z-index: 2;
   background-color: rgba(0, 0, 0, 0.5);
-  color: #f0d9bb;
-  text-align: center;
+  color: white;
   font-family: "Ledger", sans-serif;
-  margin: 10%;
-  padding: 20px; }
-
-.firstBlock h1 {
-  font-size: 550%; }
+  padding: 20px;
+  width: 40%;
+  min-width: 400px;
+  height: 400px;
+  margin-left: 50px; }
 
 .firstBlock h2 {
   font-size: 450%; }
 
+.firstBlock h1 {
+  font-size: 580%; }
+
 .firstBlock h6 {
-  font-size: 250%;
-  color: tan; }
+  font-size: 220%;
+  color: #cda434; }
 
 .galleryBlock .dividerDiv {
   width: 100%;
   height: 160px;
-  background-color: #383333; }
+  background-color: rgba(255, 255, 255, 0); }
 
 .galleryBlock .textDiv {
   display: flex;
@@ -82,12 +94,13 @@ nav {
   font-size: 100px;
   color: #cda434;
   margin: auto;
-  vertical-align: middle; }
+  vertical-align: middle;
+  font-family: "Island Moments", sans-serif; }
 
 .galleryBlock .imageHolder {
-  height: 700px;
-  background-color: rgba(255, 255, 255, 0);
-  margin-top: -65px; }
+  height: 900px;
+  margin-top: -120px;
+  background-color: #383333; }
 
 footer div {
   width: 100%;
